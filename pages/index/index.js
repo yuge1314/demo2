@@ -47,6 +47,9 @@ let that =this
       
     }).then(function(msg){
       console.log(msg)
+      let ss={
+        
+      }
      wx.request({
        url: 'https://wx.miaov.com/login',
        header: {
@@ -54,6 +57,7 @@ let that =this
          'X-WX-Encrypted-Data': msg.encryptedData,
          'X-WX-IV': msg.iv
        },
+       data:ss,
        success:res =>{
          console.log(res)
        }
