@@ -1,0 +1,38 @@
+<!--pages/details/details.wxml-->
+<!-- <text>pages/details/details.wxml</text> -->
+<view class="box">
+
+    <view class="header">
+        <image src="../../image/food1.png" />
+        <view class="text">
+            <text>HaveFun!有饭(西二旗店)</text>
+            <image src="../../image/五星评论.png" />
+            <text>559条</text>
+            <text>￥41/人</text>
+            <view>口味:7.8环境:8.3服务:8.1</view>
+            <view>上地<text>快餐简餐</text></view>
+        </view>
+    </view>
+
+    <view class="wifi">
+        <view class="p">
+            <view>
+                <image src="../../image/时间.png" />
+                <text>营业至21:00</text>
+            </view>
+            <view>
+                <image src="../../image/无线.png" />
+                <text>WIFI</text>
+            </view>
+            <view>
+                <image src="../../image/停车场.png" />
+                <text>停车场</text>
+            </view>
+        </view>
+        <view class="right">
+            <image src="../../image/右箭头.png" />
+        </view>
+    </view>
+
+    
+</view>

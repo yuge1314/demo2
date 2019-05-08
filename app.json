@@ -3,7 +3,8 @@
     "pages/home/home",
     "components/headers/headers",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/details/details"
   ],
   "window": {
     "backgroundTextStyle": "light",

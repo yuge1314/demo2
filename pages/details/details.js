@@ -1,4 +1,4 @@
-// pages/home/home.js
+// pages/details/details.js
 Page({
 
   /**
@@ -6,12 +6,6 @@ Page({
    */
   data: {
 
-  },
-  //跳转详情
-  details(){
-    wx.navigateTo({
-      url: '../details/details',
-    })
   },
 
   /**

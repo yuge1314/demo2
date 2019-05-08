@@ -90,7 +90,7 @@
     </view>
     <view class="like">
         <text>猜你喜欢</text>
-        <view>
+        <view bindtap='details'>
             <image src='../../image/food1.png' />
             <view>
                 <text>原生态麻辣烫</text>

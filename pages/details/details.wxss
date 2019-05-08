@@ -1,0 +1,74 @@
+/* pages/details/details.wxss */
+.box{
+    width: 92%;
+    margin: 0 auto;
+    background: #f6f6f6;
+}
+.header{
+    width: 100%;
+    height: 240rpx;
+    background: white;
+    border-bottom: 1rpx solid #ccc;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header>image{
+    width: 205rpx;
+    height: 205rpx;
+}
+.header>.text{
+    width: 440rpx;
+}
+.header>.text>image{
+    width: 170rpx;
+    height: 35rpx;
+}
+.header>.text>text:nth-of-type(1){
+    font-size: 35rpx;
+    font-weight: 600;
+}
+.header>.text>text:nth-of-type(2){
+    font-size: 28rpx;
+    margin-left: 10rpx;
+}
+.header>.text>text:nth-of-type(3){
+    font-size: 28rpx;
+    margin-left: 20rpx;
+}
+.header>.text>view:nth-of-type(1){
+    font-size: 22rpx;
+    color: #7d7d7d;
+}
+.header>.text>view:nth-of-type(2){
+    font-size: 22rpx;
+    color: #7d7d7d;
+}
+.header>.text>view:nth-of-type(2)>text{
+    margin-left: 20rpx;
+}
+/*  */
+.wifi{
+    width: 100%;
+    height: 100rpx;
+    border-bottom: 1rpx solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.wifi>.p{
+    display: flex;
+}
+.wifi>.p>view{
+    font-size: 30rpx;
+    margin-right: 20rpx;
+}
+.wifi>.p>view>image{
+    width: 35rpx;
+    height: 35rpx;
+    margin-right: 10rpx;
+}
+.wifi>.right>image{
+    width: 35rpx;
+    height: 35rpx;
+}
