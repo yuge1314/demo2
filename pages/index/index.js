@@ -11,7 +11,8 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+    code:null
   },
   //事件处理函数
   bindViewTap: function() {
@@ -20,11 +21,73 @@ Page({
     })
   },
   onLoad: function () {
-
+    //登录接口开始
+let that =this
+//商品列表信息
     IndexModel.prototype.getGoodsList().then(res=>{
       console.log(res)
     })
-    console.log(indexHttp)
+    that.getinfo().then(res =>{
+     //code
+      console.log(res)
+      let code=res.code
+   return   code
+    }).then(function(obj){
+      let msg={
+          code:obj,
+        encryptedData:null,
+      }
+      //userinfo
+    return  that.getinfo2().then(res =>{
+        console.log(res)
+        msg.encryptedData = res.encryptedData
+        msg.iv = res.iv
+        return msg
+      })
+      
+    }).then(function(msg){
+      console.log(msg)
+     wx.request({
+       url: 'https://wx.miaov.com/login',
+       header: {
+         'X-WX-Code': msg.code,
+         'X-WX-Encrypted-Data': msg.encryptedData,
+         'X-WX-IV': msg.iv
+       },
+       success:res =>{
+         console.log(res)
+       }
+     })
+    })
+ //登录结束  
+
+// console.log(this.getinfo())
+
+  
+
+    // wx.request({
+    //   url: 'https://wx.miaov.com/login',
+    //   data: { code: code },
+    //   method: 'POST',
+    //   header: {
+    //     'X-WX-Code': code,
+    //     'X-WX-Encrypted-Data': userInfo.encryptedData,
+    //     'X-WX-IV': userInfo.iv
+    //   },
+    //   success: function (res) {
+    //     // if (res.statusCode == 200) {
+    //     // console.log("获取到的openid为：" + res.data)
+    //     // that.globalData.openid = res.data
+    //     // wx.setStorageSync('openid', res.data)
+    //     console.log(res)
+    //     // } else {
+    //     //   console.log(res.errMsg)
+    //     // }
+    //   },
+    // })
+   
+
+    // console.log(indexHttp)
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -58,6 +121,29 @@ Page({
     this.setData({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
+    })
+  },
+  getinfo:function() {
+    return new Promise((resolve, reject) => {
+      wx.login({
+        success: res => {
+          resolve(res)
+
+
+        }
+      })
+      
+    })
+  }
+  ,
+  getinfo2: function () {
+    return new Promise((resolve, reject) => {
+      wx.getUserInfo({
+        success: res => {
+          resolve(res)
+        }
+      })
+
     })
   }
 })
