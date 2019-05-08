@@ -1,0 +1,133 @@
+<!--pages/home/home.wxml-->
+<!-- <text>pages/home/home.wxml</text> -->
+<view class="box">
+    <view class="header">
+        <view>
+            <text>北京</text>
+            <cover-image src="../../image/下箭头.png"></cover-image>
+        </view>
+        <input type="text" placeholder="输入商户名、地点、找优惠"/>
+        <image src="../../image/搜索.png" />
+        <view>
+            <cover-image src="../../image/我的.png"></cover-image>
+            <text>我的</text>
+        </view>
+    </view>
+    <view class="mian">
+        <view>
+            <image src="../../image/1.png" />
+            <text>美食</text>
+        </view>
+        <view>
+            <image src="../../image/1.png" />
+            <text>外卖</text>
+        </view>
+        <view>
+            <image src="../../image/1.png" />
+            <text>休闲娱乐</text>
+        </view>
+        <view>
+            <image src="../../image/1.png" />
+            <text>KTV</text>
+        </view>
+        <view>
+            <image src="../../image/1.png" />
+            <text>景点/门票</text>
+        </view>
+        <view>
+            <image src="../../image/1.png" />
+            <text>酒店</text>
+        </view>
+        <view>
+            <image src="../../image/1.png" />
+            <text>电影/演出</text>
+        </view>
+        <view>
+            <image src="../../image/1.png" />
+            <text>足疗/按摩</text>
+        </view>
+        <view>
+            <image src="../../image/1.png" />
+            <text>丽人/美发</text>
+        </view>
+        <view>
+            <image src="../../image/1.png" />
+            <text>购物/商场</text>
+        </view>
+        <view>
+            <image src="../../image/1.png" />
+            <text>到家服务</text>
+        </view>
+        <view>
+            <image src="../../image/1.png" />
+            <text>宠物</text>
+        </view>
+        <view>
+            <image src="../../image/1.png" />
+            <text>民宿/公寓</text>
+        </view>
+        <view>
+            <image src="../../image/1.png" />
+            <text>亲子</text>
+        </view>
+        <view>
+            <image src="../../image/1.png" />
+            <text>全部</text>
+        </view>
+    </view>
+    <view class="search">
+        <view>
+            <image src="../../image/re1.png" />
+            美食热搜
+        </view>
+        <view>
+            <image src="../../image/re1.png" />
+            今晚吃啥
+        </view>
+    </view>
+    <view class="red">
+        <image src="../../image/redb.png" />
+    </view>
+    <view class="like">
+        <text>猜你喜欢</text>
+        <view>
+            <image src='../../image/food1.png' />
+            <view>
+                <text>原生态麻辣烫</text>
+                <text>[上地]麻辣烫1份(包含:黑白叶、鹌鹑蛋、午餐肉、蟹排、鸡泥汤、金针菇、黑白叶、鹌鹑蛋、午餐肉、蟹排、鸡泥汤、金针菇、..</text>
+                <view>
+                    <text>￥20</text>
+                    <text>￥25</text>
+                    <text>已售6</text>
+                </view>
+            </view>
+        </view>
+
+        <view>
+            <image src='../../image/food1.png' />
+            <view>
+                <text>原生态麻辣烫</text>
+                <text>[上地]麻辣烫1份(包含:黑白叶、鹌鹑蛋、午餐肉、蟹排、鸡泥汤、金针菇、黑白叶、鹌鹑蛋、午餐肉、蟹排、鸡泥汤、金针菇、..</text>
+                <view>
+                    <text>￥20</text>
+                    <text>￥25</text>
+                    <text>已售6</text>
+                </view>
+            </view>
+        </view>
+
+        <view>
+            <image src='../../image/food1.png' />
+            <view>
+                <text>原生态麻辣烫</text>
+                <text>[上地]麻辣烫1份(包含:黑白叶、鹌鹑蛋、午餐肉、蟹排、鸡泥汤、金针菇、黑白叶、鹌鹑蛋、午餐肉、蟹排、鸡泥汤、金针菇、..</text>
+                <view>
+                    <text>￥20</text>
+                    <text>￥25</text>
+                    <text>已售6</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    
+</view>
