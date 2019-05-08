@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/home/home",
     "components/headers/headers",
     "pages/index/index",
     "pages/logs/logs"
@@ -10,6 +11,5 @@
     "navigationBarTitleText": "大众点评",
     "navigationBarTextStyle": "black"
   },
-
   "sitemapLocation": "sitemap.json"
 }
