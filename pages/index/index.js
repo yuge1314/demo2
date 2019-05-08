@@ -1,6 +1,10 @@
 //index.js
 //获取应用实例
 const app = getApp()
+import {
+  IndexModel
+} from '../../modules/modules.js'
+let indexHttp = new IndexModel()
 
 Page({
   data: {
@@ -16,6 +20,11 @@ Page({
     })
   },
   onLoad: function () {
+
+    IndexModel.prototype.getGoodsList().then(res=>{
+      console.log(res)
+    })
+    console.log(indexHttp)
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
