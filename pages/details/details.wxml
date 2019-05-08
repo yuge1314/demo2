@@ -1,7 +1,7 @@
-<!--pages/details/details.wxml-->
+<!-- pages/details/details.wxml -->
 <!-- <text>pages/details/details.wxml</text> -->
 <view class="box">
-
+    <!--  -->
     <view class="header">
         <image src="../../image/food1.png" />
         <view class="text">
@@ -10,10 +10,13 @@
             <text>559条</text>
             <text>￥41/人</text>
             <view>口味:7.8环境:8.3服务:8.1</view>
-            <view>上地<text>快餐简餐</text></view>
+            <view>
+                上地
+                <text>快餐简餐</text>
+            </view>
         </view>
     </view>
-
+    <!--  -->
     <view class="wifi">
         <view class="p">
             <view>
@@ -33,6 +36,15 @@
             <image src="../../image/右箭头.png" />
         </view>
     </view>
+    <!--  -->
+    <view class="address">
+        <view class="add">
+            <image src="../../image/地址.png" />
+            <text>上地十街辉煌国际西6号楼底商1-2楼(地铁13号线西二旗A口西500米)</text>
+            <text>据您步行60m，需要1分钟</text>
+        </view>
+        <view class="ress">
 
-    
+        </view>
+    </view>
 </view>

@@ -22,5 +22,7 @@ class IndexModel extends HTTP {
     })
    
   }
+  
+  
 }
 export { IndexModel }

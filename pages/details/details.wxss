@@ -4,6 +4,7 @@
     margin: 0 auto;
     background: #f6f6f6;
 }
+/*  */
 .header{
     width: 100%;
     height: 240rpx;
@@ -51,6 +52,7 @@
 .wifi{
     width: 100%;
     height: 100rpx;
+    background: white;
     border-bottom: 1rpx solid #ccc;
     display: flex;
     align-items: center;
@@ -71,4 +73,25 @@
 .wifi>.right>image{
     width: 35rpx;
     height: 35rpx;
+}
+/*  */
+.address{
+    width: 100%;
+    height: 185rpx;
+    background: pink;
+}
+.address>.add{
+    width: 70%;
+    height: 100%;
+}
+.address>.add>view>image{
+    width: 35rpx;
+    height: 35rpx;
+}
+.address>.add>view>text{
+    font-size: 30rpx;
+}
+.address>.add>text{
+    font-size: 25rpx;
+    color: #757575;
 }
